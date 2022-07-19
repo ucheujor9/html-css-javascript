@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px, 30px;
+    top:0;  
+    height:10vh;
+  
+}
+
+header{
+    background-color: wheat;
+}
+body{
+    background-image: url(img/team3.jpg); 
+}
+
+.title{
+    color: rgb(206, 128, 27);
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item{
+    padding: 15px;
+    list-style: none;
+}
+
+.nav-link{
+    color: rgb(206, 128, 27);
+    text-decoration: none;
+}
+
+.hamburger{
+    display: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.line1{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(206, 128, 27);
+    transition: 0.5s;
+}
+
+.line2{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(206, 128, 27);
+}
+
+.line3{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(206, 128, 27);
+}
+@media only screen and (max-width:768px){
+    *{
+        overflow: hidden;
+    }
+    .links{
+        position: absolute;
+        flex-direction: column;
+        border-radius: 0px 0px 0px 15px;
+        transition:transform 0.5s ease-in;  
+        transform:translate(100%); 
+        top:15vh;  
+        right:0px;
+      
+    }
+    .hamburger{display: block;}
+    .nav-change{
+        transform: translate(0%);
+    }
+  
+    .change .line1 {  
+        transform: rotate(45deg) translate(8px,3px);  
+    }  
+    .change .line2 {  
+        opacity: 0;  
+    }  
+    .change .line3 {  
+        transform: rotate(-45deg) translate(8px,-3px);  
+    }
+   
+    }
+      
+  
+    
+   /* for signup page */
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+   h1{
+       color: rgb(122, 71, 4);
+   }
+   .open{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/team3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open form{
+    width: 100%;
+    max-width: 500px;
+    padding: 80px;
+    background: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+button{
+    background-color: rgb(122, 71, 4);
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+} 
+
+.open input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ 
+    }
+
+.bell{
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: 0px;
+    margin-right: 70px;
+    
+}
+
+.open span{
+    color: red;
+}      
+             
